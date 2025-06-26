@@ -20,10 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculette</title>
-     <?php include "./_dependances.php" ?>
+    <?php include "./_dependencies.php" ?>
 </head>
 
 <body>
+    <?php include "./_menu.php" ?>
     <h1 class="text-primary text-center my-5">Calculette</h1>
     <form action="./calculette.php" method="post" class="container my-5">
         <div class="mb-3 row">
@@ -56,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </form>
-    <div>
+    <div class="text-primary text-center my-5">
         <?= $resultat ?>
     </div>
 </body>

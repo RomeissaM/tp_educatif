@@ -17,12 +17,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conjugaison</title>
-    <?php include "./_dependances.php" ?>
+    <?php include "./_dependencies.php" ?>
 </head>
 
 <body>
     <h1 class="text-primary text-center my-5">Conjugaison des verbes réguliers du premier groupe</h1>
-    <form action="./index.php" method="post" class="container my-5">
+    <form action="./conjugaison.php" method="post" class="container my-5">
         <div class="mb-3 row">
             <label for="infinitif" class="col-sm-2 col-form-label">Verbe à l'infinitif</label>
             <div class="col-sm-10">
